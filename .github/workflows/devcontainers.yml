@@ -43,7 +43,7 @@ jobs:
       # Reclaim ~14 GB by stripping preinstalled tools none of the devcontainer
       # paths use (Android SDK, .NET, Haskell).
       - name: Free runner disk
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+        uses: jlumbroso/free-disk-space@ceedf095f4ec1a097402bc6bd80831f2e1a6fde6
         with:
           tool-cache: true
           android: true
@@ -88,7 +88,7 @@ jobs:
       # device", see PR #495). Reclaim ~14 GB by stripping preinstalled tools the
       # build never touches — mirrors the memory-stack job's existing remedy.
       - name: Free runner disk
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+        uses: jlumbroso/free-disk-space@ceedf095f4ec1a097402bc6bd80831f2e1a6fde6
         with:
           tool-cache: true
           android: true
